@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Assignment-5</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container mt-5 pt-4">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-12 col-lg-6 col-md-12 ounded float-start">
+                        <img src="mac.png" style="height:500px;" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-12 pt-4">
+                        <h1>Customize your blue 24-inch iMac with Apple M1 chip</h1>
+                        <br>
+                        <div>
+                            <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core
+                                GPU,
+                                and 16-core Neural Engine</p>
+                            <p>8GB unified memory</p>
+                            <p>256GB SSD storage</p>
+                            <p>Two Thunderbolt / USB 4 ports</p>
+                            <p>Magic Mouse</p>
+                            <p>Magic Keyboard - US English</p>
+                            <br>
+                        </div>
+                        <div>
+                            <h5>Memory</h5>
+                            <button id="8gb-unified-memory" class="mt-4 mb-4 btn btn-secondary" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="8GB unified Memory-$0">8GB unified Memory</button>
+                            <button id="16gb-unified-memory" class="mt-4 mb-4 btn btn-secondary"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="16GB unified Memory-$180">16GB
+                                unified Memory</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Storage</h5>
+
+                            <button id="256gb-ssd" class="mt-4 mb-4 btn btn-secondary" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="256GB SSD storage-$0">256GB SSD storage</button>
+                            <button id="512gb-ssd" class="mt-4 mb-4 btn btn-secondary" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="512GB SSD storage-$100">512GB SSD storage</button>
+                            <button id="1tb-ssd" class="mt-4 mb-4 btn btn-secondary" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="1TB SSD storage-$180">1TB SSD storage</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Choose your delivery option</h5>
+                            <button id="free-delivery" class="mt-4 mb-4 btn btn-secondary" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="riday,Aug 25 FREE prime Delivery is at $0">Friday,Aug 25
+                                FREE prime
+                                Delivery</button>
+                            <button id="charged-delivery" class="mt-4 mb-4 btn btn-secondary" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Friday,Aug 21 Delivery charge is at $20">Friday,Aug 21
+                                Delivery charge
+                                $20</button>
+                        </div>
+                        <!-- base price -->
+                        <div>
+                            <div class="mt-4 pt-4 d-flex justify-content-between">
+                                <h5>Base Price</h5>
+                                <h5>$<span>1299</span></h5>
+                            </div>
+                            <hr>
+                            <!-- extra memory -->
+                            <div class="mt-4 pt-4 d-flex justify-content-between">
+                                <h5>Extra Memory Cost</h5>
+                                <h5>$<span id="extra-memory-cost">0</span></h5>
+                            </div>
+                            <hr>
+                            <div class="mt-4 pt-4 d-flex justify-content-between">
+                                <!-- Extra Storage -->
+                                <h5>Extra Storage Cost</h5>
+                                <h5>$<span id="extra-storage-cost">0</span></h5>
+                            </div>
+                            <hr>
+                            <div class="mt-4 pt-4 d-flex justify-content-between">
+                                <!-- Delivery change -->
+                                <h5>Delivery change</h5>
+                                <h5>$<span id="extra-delivery-cost">0</span></h5>
+                            </div>
+                            <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+                            <div class="mt-4 d-flex justify-content-between">
+                                <!-- total price  -->
+                                <h4>Total Price</h4>
+                                <h4>$<span id="total-price">1299</span></h4>
+                            </div>
+                        </div>
+                        <div class="pt-4 mt-4">
+                            <!-- promo code   -->
+                            <h6>Add Promo Code</h6>
+                            <div class="d-flex justify-content-between">
+                                <input id="promo-input" type="text" class="form-control" placeholder="Type promo..">
+                                <button id="promo-button" class="btn btn-danger" type="button">Apply</button>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center mt-4 pt-4">
+                <h1>Total:</h1>
+                <h1>$<span id="final-total">1299</span></h1>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
